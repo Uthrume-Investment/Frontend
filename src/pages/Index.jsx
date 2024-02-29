@@ -5,6 +5,7 @@ import HowItWorks from '../components/HowItWorks';
 import InvestmentPlans from '../components/InvestmentPlans';
 import ChartAnalysis from '../components/ChartAnalysis';
 import Testimonials from '../components/Testimonials';
+import Footer from '../components/Footer';
 
 export default function Index() {
 
@@ -35,6 +36,7 @@ export default function Index() {
       <InvestmentPlans />
       <ChartAnalysis />
       <Testimonials />
+      <Footer />
     </div>
   );
 }
