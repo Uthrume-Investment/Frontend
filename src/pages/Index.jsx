@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 import NavBar from '../components/NavBar';
 import Hero from '../components/Hero';
 import HowItWorks from '../components/HowItWorks';
+import InvestmentPlans from '../components/InvestmentPlans';
+import ChartAnalysis from '../components/ChartAnalysis';
+import Testimonials from '../components/Testimonials';
 
 export default function Index() {
 
@@ -29,6 +32,9 @@ export default function Index() {
       <NavBar />
       <Hero />
       <HowItWorks />
+      <InvestmentPlans />
+      <ChartAnalysis />
+      <Testimonials />
     </div>
   );
 }
