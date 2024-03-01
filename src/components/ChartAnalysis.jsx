@@ -24,7 +24,7 @@ export default function ChartAnalysis() {
         }]
       };
   return (
-  <Slider {...settings}>
+  <Slider {...settings} className='p-5'>
     <div>
         Chart 1
     </div>

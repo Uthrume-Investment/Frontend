@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
+body{
+    overflow-x: hidden;
+}
 .active__link{
     position: relative;
 }
@@ -13,5 +15,14 @@
     bottom: 0;
     height: 2px;
     width: 100%;
-    background: rgb(59 130 246);
+    background: #3b82f6;
+}
+
+.selectedTab{
+    background-color: rgb(59 130 246 / .5);
+    color: white;
+}
+
+.custom__shadow{
+    filter:drop-shadow(0 0 30px rgb(59 130 246 / .1));
 }
