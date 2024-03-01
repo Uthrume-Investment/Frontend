@@ -6,24 +6,26 @@ const Footer = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    try {
-      const response = await fetch('/api/subscribe', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ email }),
-      });
-      if (response.ok) {
-        alert('Successfully subscribed to newsletter!');
-        setEmail('');
-      } else {
-        alert('Failed to subscribe to newsletter. Please try again later.');
-      }
-    } catch (error) {
-      console.error('Error subscribing to newsletter:', error);
-      alert('Failed to subscribe to newsletter. Please try again later.');
-    }
+    alert("You have subscribed successfully.")
+    // try {
+    //   const response = await fetch('https://api.elasticemail.com/v4/contacts', {
+    //     method: 'POST',
+    //     headers: {
+    //       'Content-Type': 'application/json',
+    //       'X-ElasticEmail-ApiKey': '91421B9FD0A009D6384FA4CD0A19BE3C4849ED019D96B41A895932DEC5C214EC4570F7437E4D0BB02123C1064B9AF1BD'
+    //     },
+    //     body: JSON.stringify({ email }),
+    //   });
+    //   if (response.ok) {
+    //     alert('Successfully subscribed to newsletter!');
+    //     setEmail('');
+    //   } else {
+    //     alert('Failed to subscribe to newsletter. Please try again later.');
+    //   }
+    // } catch (error) {
+    //   console.error('Error subscribing to newsletter:', error);
+    //   alert('Failed to subscribe to newsletter. Please try again later.');
+    // }
   };
 
   return (

@@ -13,10 +13,9 @@ export default function Index() {
     <>
       <Hero />
       <HowItWorks />
-      <InvestmentPlans />
+      {/* <InvestmentPlans /> */}
       {/* <ChartAnalysis /> */}
       {/* <Testimonials /> */}
-      <Footer />
     </>
   );
 }
